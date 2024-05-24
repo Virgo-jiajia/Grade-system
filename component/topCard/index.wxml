@@ -1,0 +1,20 @@
+<view hover-class="none" class="top_card {{isCard?'borderStyle':''}}">
+    <view hover-class="none" class="img">
+        <image src="/images/icon/classIcon.png" mode="aspectFill" />
+    </view>
+    <view hover-class="none" class="detail">
+        <block wx:if="{{title}}">
+        <text>{{title}}</text>
+        <view hover-class="none" class="tip">
+            <text wx:if="{{charge}}">班主任 : {{charge}}</text>
+            <text wx:if="{{teacher}}">授课老师 : {{teacher}}</text>
+            <text wx:if="{{student}}">学生姓名 : {{student}}</text>
+        </view>
+        </block>
+        <block wx:else>
+            <view class="nothing" hover-class="none">
+                暂无数据
+            </view>
+        </block>
+    </view>
+</view>

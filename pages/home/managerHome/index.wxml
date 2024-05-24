@@ -1,0 +1,47 @@
+<view hover-class="none" class="record-list">
+    <view hover-class="none" class="nav-bar">
+    <block wx:for="{{tabs}}" wx:key="item">
+      <view hover-class="none" id="{{index}}" class="nav-item" bindtap="onTabClick">
+        <view class="item">
+          <view hover-class="none" class="nav-item-title">{{item}}</view>
+          <view class="line {{tabIndex == index ? 'active default' : 'default' }}" hover-class="none"></view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view hover-class="none" class="content_wrapper">
+    <block wx:if="{{tabIndex == 0}}">
+      <block wx:for="{{records}}" wx:key="index">
+        <recordAdminCard flowId="{{item.flow_id}}" status="{{item.flow_status}}" subject="{{item.subject_name}}" type="{{item.subjectTagHans}}"
+          class="{{item.class_name}}" master="{{item.master_name}}" teacher="{{item.teacher_name}}" student="{{item.student_name}}"/>
+          <view wx:if="{{!records.length}}" class="nothing">暂无数据</view>
+      </block>
+    </block>
+
+    <block wx:if="{{tabIndex == 1}}">
+      <block wx:for="{{loadingRecords}}" wx:key="index">
+          <recordAdminCard flowId="{{item.flow_id}}" status="{{item.flow_status}}" subject="{{item.subject_name}}" type="{{item.subjectTagHans}}"
+            class="{{item.class_name}}" master="{{item.master_name}}" teacher="{{item.teacher_name}}" student="{{item.student_name}}"/>
+      </block>
+      <view wx:if="{{!loadingRecords.length}}" class="nothing">暂无数据</view>
+    </block>
+
+    <block wx:if="{{tabIndex == 2}}">
+      <block wx:for="{{successRecords}}" wx:key="index">
+          <recordAdminCard flowId="{{item.flow_id}}" status="{{item.flow_status}}" subject="{{item.subject_name}}" type="{{item.subjectTagHans}}"
+            class="{{item.class_name}}" master="{{item.master_name}}" teacher="{{item.teacher_name}}" student="{{item.student_name}}"/>
+      </block>
+      <view wx:if="{{!successRecords.length}}" class="nothing">暂无数据</view>
+    </block>
+
+    <block wx:if="{{tabIndex == 3}}">
+      <block wx:for="{{failRecords}}" wx:key="index">
+          <recordAdminCard flowId="{{item.flow_id}}" status="{{item.flow_status}}" subject="{{item.subject_name}}" type="{{item.subjectTagHans}}"
+            class="{{item.class_name}}" master="{{item.master_name}}" teacher="{{item.teacher_name}}" student="{{item.student_name}}"/>
+      </block>
+      <view wx:if="{{!failRecords.length}}" class="nothing">暂无数据</view>
+    </block>
+  </view>
+
+</view>

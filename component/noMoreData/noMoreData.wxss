@@ -1,0 +1,31 @@
+/* component/noMoreData/noMoreData.wxss */
+
+/* 1.暂无数据 */
+.nmd_con_noData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100rpx;
+    color: #999;
+    font-size: 28rpx;
+    line-height: 45rpx;
+}
+.nmd_con_noData_img{
+    width: 70%;
+    min-height: 100rpx;
+    margin-bottom: 30rpx;
+}
+/*  2.加载更多   */
+.nmd_loadingmore {
+    margin-top: 10rpx;
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+
+.nmd_no_more {
+    color: #757575;
+    font-size: 30rpx;
+    margin: 30rpx 0;
+    text-align: center;
+}

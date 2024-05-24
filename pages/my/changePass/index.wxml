@@ -1,0 +1,42 @@
+<view hover-class="none" class="change-pass">
+    <view hover-class="none" class="tip">
+        请设置新密码，密码必须是8-16个字符，包含数字、大写字母、小写字母和特殊字符。
+    </view>
+
+    <view hover-class="none" class="change-form">
+        <view hover-class="none" class="form-item">
+            <view data-index="{{0}}" bindtap="togglePass" hover-class="none" hover-stop-propagation="false">
+                <text>*</text>
+                <label for="old">旧密码
+                    <image src="/images/icon/{{showPasswordArr[0]?'pass-hidden':'pass-show'}}.png" 
+                    mode="aspectFill" />
+                </label>
+            </view>
+            <input id="old" type="text" password="{{showPasswordArr[0]}}" placeholder="请输入旧密码" placeholder-class="placeStyle"
+            value="{{oldPass}}" bindblur="oldPassBlur"/>
+        </view>
+        <view hover-class="none" class="form-item">
+            <view data-index="{{1}}" bindtap="togglePass" hover-class="none" hover-stop-propagation="false">
+                <text>*</text>
+                <label for="new">新密码
+                    <image src="/images/icon/{{showPasswordArr[1]?'pass-hidden':'pass-show'}}.png" 
+                    mode="aspectFill" />
+                </label>
+            </view>
+            <input id="new" type="text" password="{{showPasswordArr[1]}}" placeholder="请设置新密码" placeholder-class="placeStyle"
+            value="{{newPass}}" bindblur="newPassBlur"/>
+        </view>
+        <view hover-class="none" class="form-item">
+            <view data-index="{{2}}" bindtap="togglePass" hover-class="none" hover-stop-propagation="false">
+                <text>*</text>
+                <label for="newAgain">重复新密码
+                    <image src="/images/icon/{{showPasswordArr[2]?'pass-hidden':'pass-show'}}.png" mode="aspectFill" />
+                </label>
+            </view>
+            <input id="newAgain" type="text" password="{{showPasswordArr[2]}}" placeholder="请重复新密码" placeholder-class="placeStyle"
+            value="{{newAgainPass}}" bindblur="newPassAgainBlur"/>
+        </view>
+    </view>
+
+    <button bindtap="savePass" class="save-btn">保存</button>
+</view>

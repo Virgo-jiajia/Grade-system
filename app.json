@@ -1,0 +1,83 @@
+{
+    "pages": [
+        "pages/home/index/index",
+        "pages/home/class/index",
+        "pages/home/login/index",
+        "pages/home/studentList/index",
+        "pages/home/masterOperation/index",
+        "pages/home/masterIndex/index",
+
+        "pages/home/managerHome/index",
+        "pages/home/managerHome/replayDeatil/index",
+
+        "pages/home/chooseSubject/index",
+        "pages/home/chooseSubject/subjectOnCampus/index",
+
+        "pages/home/scoreForm/onCampus/index",
+        "pages/home/scoreForm/offCampus/index",
+        "pages/home/scoreForm/operation/index",
+        "pages/home/scoreForm/updateScore/index",
+
+        "pages/my/index/index",
+        "pages/my/historyInfo/index",
+        "pages/my/changePass/index",
+        "pages/my/applyRecord/index",
+        "pages/my/applyRecord/changeScore/index",
+
+        "pages/my/myInfo/myInfo",
+        "pages/home/refreshDemo/refreshDemo",
+        "pages/home/request/request",
+
+        "pages/phoneAuthor/index/index",
+        "pages/phoneAuthor/rt/rt",
+        "pages/author/index/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "微信接口功能演示",
+        "backgroundColor": "#eeeeee",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#CED4E4",
+        "selectedColor": "#CC2A2A",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [{
+                "pagePath": "pages/home/class/index",
+                "text": "首页",
+                "iconPath": "images/tabbar/tab1.png",
+                "selectedIconPath": "images/tabbar/tab1-slt.png"
+            },
+            {
+                "pagePath": "pages/home/managerHome/index",
+                "text": "首页",
+                "iconPath": "images/tabbar/tab1.png",
+                "selectedIconPath": "images/tabbar/tab1-slt.png"
+            },
+            {
+                "pagePath": "pages/my/index/index",
+                "text": "我的",
+                "iconPath": "images/tabbar/tab2.png",
+                "selectedIconPath": "images/tabbar/tab2-slt.png"
+            }
+        ]
+    },
+
+    "usingComponents": {
+        "noMoreData": "./component/noMoreData/noMoreData",
+        "mp-html": "./component/mp-html/index",
+        "topCard": "./component/topCard/index",
+        "recordCard": "./component/recordCard/index",
+        "recordAdminCard": "./component/recordAdminCard/index",
+        "linkStyle": "./component/linkStyle/index"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "resolveAlias": {
+        "~/*": "/*"
+    }
+
+}

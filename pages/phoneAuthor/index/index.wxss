@@ -1,0 +1,77 @@
+/* pages/author/index/index.ttss */
+
+page {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* .con{
+  width: 100%;
+  height:580rpx;
+  
+  overflow:hidden;
+  position: absolute;
+  top: 0;left: 0;
+  right: 0;bottom: 0;
+  margin:auto;
+} */
+.con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 40%;
+}
+
+
+.delegete {
+  margin: 50rpx 30rpx 50rpx 30rpx;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 26rpx;
+}
+
+.delegete image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.delegete text {
+  color: #00AF66;
+}
+
+.con_a {
+  display: block;
+  font-size: 35rpx;
+  color: #000;
+  text-align: center;
+  margin-top: 50rpx;
+}
+
+.con_b {
+  display: block;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  line-height: 45rpx;
+  font-size: 28rpx;
+  color: #a7aaa9;
+  text-align: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.con button {
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 400rpx;
+  height: 80rpx !important;
+  line-height: 80rpx !important;
+  border: 1px solid ;
+  color: #00AF66;
+  text-align: center;
+  font-size: 32rpx;
+  background: none;
+  background-color: white;
+}

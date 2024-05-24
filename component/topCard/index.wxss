@@ -1,0 +1,27 @@
+.top_card {
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32rpx;
+  padding: 37rpx 46rpx;
+}
+.top_card image {
+  width: 33rpx;
+  height: 32rpx;
+  margin: 5rpx 17rpx 0 0;
+}
+.top_card .detail {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #333333;
+}
+.top_card .detail .tip text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666666;
+  display: block;
+  margin-top: 12rpx;
+}
+.borderStyle {
+  border-radius: 12rpx;
+}

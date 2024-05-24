@@ -1,0 +1,78 @@
+<view hover-class="none" class="operation">
+    <view hover-class="none" class="top">
+        <view>{{classArray[0].subjectTagHans}}</view>
+        <view hover-class="none" class="switch">
+            <picker mode="selector" range="{{classArray}}" value="{{index}}" 
+            range-key="{{'subject_name'}}" bindchange="pickerChange">
+                <view>
+                    <text wx:if="{{!classArray[index].subject_name}}">选择对应授课科目</text>
+                    <text wx:else>{{classArray[index].subject_name}}</text>
+                    <image src="/images/icon/down.png" mode="aspectFill"/>
+                </view>
+            </picker>
+        </view>
+          
+    </view>
+      
+    <view hover-class="none" class="operation-top">
+        <view hover-class="none" class="img">
+            <image src="/images/icon/classIcon.png" mode="aspectFill" />
+        </view>
+        <view hover-class="none" class="detail">
+            <text>{{className}}</text>
+            <view hover-class="none" class="tip">
+                <text wx:if="{{masterName}}">班主任: {{masterName}}</text>
+                <text wx:if="{{teacherName}}">授课老师: {{teacherName}}</text>
+                <text wx:if="{{stuName}}">学生姓名: {{stuName}}</text>
+            </view>
+        </view>
+    </view>
+    <view hover-class="none" class="operation-form">
+        <linkStyle/>
+        <view hover-class="none" class="operation-item {{item.first?'extra-item':''}}" wx:for="{{courses}}" wx:key="title">
+            <view hover-class="none" wx:if="{{item.first}}" class="extra-title">一、平时成绩</view>
+            <view hover-class="none" class="title">{{item.title}}</view>
+            <view hover-class="none" class="score">
+                <text>成绩</text>
+                <view>    
+                    <input type="number" value="{{item.score}}" placeholder="请输入1-100分" disabled="{{isSubmitted}}"
+                    placeholder-class="phcolor" bindblur="getIntegral" data-index="{{index}}"/>
+                </view>
+            </view>
+        </view>
+        <view hover-class="none" class="all">
+            <block wx:if="{{isSubmitted}}">
+                总评分：<text>{{finalScore}}</text>
+            </block>
+            <block wx:else>
+                总评分：<text>{{total}}</text>
+            </block>
+        </view>
+    </view>
+
+    <view hover-class="none" class="again">
+        <view>如若该学生无此次成绩，请选择</view>
+        <block wx:for="{{buttons}}" wx:key="buttons">
+            <button class='{{item.checked?"checked_button":"normal_button"}}'
+            data-id='{{item.id}}' bindtap='radioButtonTap' hover-class="none">{{item.name}}</button>
+        </block>
+    </view>
+
+    <view hover-class="none" class="comment">
+        <text>备注</text>
+        <view hover-class="none" class="comment-info">
+            <textarea maxlength="-1" value="{{remark}}" rows="10" bindinput="getRemark"
+            placeholder="请输入备注信息" placeholder-class="placeStyle"></textarea>
+        </view> 
+    </view>
+    
+    <block wx:if="{{!isSubmitted}}">
+        <button class="operation-btn" bindtap="submitForm" hover-class="none">提交</button>
+    </block>
+    <block wx:else>
+        <view class="nothing">
+            该学生已经提交过成绩
+        </view>
+    </block>
+      
+</view>

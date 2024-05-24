@@ -1,0 +1,19 @@
+<!--component/noMoreData/noMoreData.wxml-->
+
+<view hover-class="none" class="nmd_loadingmore">
+    <block wx:if="{{listNum == 0}}">
+        <!-- 1.无数据 -->
+        <view hover-class="none" class="nmd_con_noData">
+            <image class="nmd_con_noData_img" src="{{noImgStr}}" mode="widthFix"></image>
+            <view>{{noDataStr}}</view>
+        </view>
+    </block>
+    <block wx:else>
+        <!-- 2.到底提示 -->
+        <view hover-class="none" wx:if="{{!isLastPage}}">
+            <view hover-class="none" class="nmd_no_more">加载更多...</view>
+        </view>
+        <view hover-class="none" wx:else class="nmd_no_more" style="color: {{alertColor}};">{{alertStr}}</view>
+    </block>
+
+</view>

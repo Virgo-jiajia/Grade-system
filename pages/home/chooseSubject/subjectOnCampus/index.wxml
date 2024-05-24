@@ -1,0 +1,19 @@
+<!-- 页面顺序 home login class studentList chooseSubject operation -->
+<view hover-class="none" class="stu-list">
+    <topCard title="{{className}}" charge="{{masterName}}" student="{{stuName}}"/>
+
+    <!-- 3个card 点击进入不同的页面 url会变化 -->
+    <view hover-class="none" class="subject-box" wx:for="{{subjects}}" wx:key="key">
+        <navigator url="/pages/home/scoreForm/onCampus/index?key={{item.key}}" hover-class="none" open-type="navigate">
+            <view hover-class="none" class="subject-item">
+                <view hover-class="none" class="subject-left">
+                    <view hover-class="none" class="title">
+                        {{item.label}}
+                    </view>
+                    <text>点击进入录入成绩</text>
+                </view>
+                <image src="/images/icon/rightArrow.png" mode="aspectFill" />     
+            </view>
+        </navigator>
+    </view>
+</view> 

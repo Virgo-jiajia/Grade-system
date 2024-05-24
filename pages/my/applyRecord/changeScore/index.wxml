@@ -1,0 +1,23 @@
+<view hover-class="none" class="change-score" hover-class="none" hover-stop-propagation="false">
+    <view hover-class="none" class="upload">
+        上传凭证
+        <view hover-class="none">
+            <view class="images-box" wx:for="{{imagesFront}}" wx:key="index">
+                <image src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+                <view class="delete-img" data-index="{{index}}" catchtap="deleteImg">x</view>
+            </view>
+            <image src="/images/icon/my/photo.png" mode="aspectFill" bindtap="chooseImage"/>
+        </view>
+          
+    </view>
+    <view hover-class="none" class="comment">
+        <text>申请描述</text>
+        <view hover-class="none" class="comment-info">
+            <textarea class="textarea" value="{{desc}}" bindinput="textareaInput"
+            maxlength="-1" placeholder="请输入备注信息" placeholder-class="phcolor"></textarea>
+        </view> 
+    </view>
+      
+    <button class="submit" bindtap="postScore">提交</button>
+      
+</view>

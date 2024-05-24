@@ -1,0 +1,6 @@
+<!--pages/phoneauthor/rt/rt.wxml-->
+<view hover-class="none" class="container">
+    <view hover-class="none" class="rtBG">
+        <mp-html content="{{con}}" />
+    </view>
+</view>

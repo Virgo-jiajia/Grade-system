@@ -1,0 +1,24 @@
+<!--pages/home/refreshDemo/refreshDemo.wxml-->
+<view hover-class="none" class="container safeBottom">
+	<!-- 1.list -->
+	<view hover-class="none" class="list">
+		<block wx:for="{{list}}" wx:key="list">
+			<view hover-class="none" class="item whiteBG all-col" bindtap="tapItem" data-item="{{item}}">
+				<view hover-class="none" class="item-a all-row">
+					<view hover-class="none" class="com-bar"></view>
+					<view hover-class="none" class="item-a-b com-text-one">电池型号：
+						<text>JB-002</text></view>
+
+					<view hover-class="none" class="item-a-c" wx:if="{{item.type == 1}}">已完成</view>
+					<view hover-class="none" class="item-a-c" wx:else>未完成</view>
+				</view>
+				<view hover-class="none" class="item-b all-row">
+					<view hover-class="none" class="item-b-a">2020-12-02 12:11:11</view>
+					<view hover-class="none" class="item-b-b">查看详情</view>
+				</view>
+			</view>
+		</block>
+	</view>
+
+	<noMoreData isLastPage="{{isLastPage}}" listNum="{{list.length}}"></noMoreData>
+</view>

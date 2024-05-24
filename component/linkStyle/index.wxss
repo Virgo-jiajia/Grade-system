@@ -1,0 +1,15 @@
+.link_style {
+  display: flex;
+  justify-content: space-between;
+}
+.link_style image {
+  width: 18rpx;
+  height: 50rpx;
+  margin-top: -50rpx;
+}
+.link_style image:first-child {
+  margin-left: 80rpx;
+}
+.link_style image:last-child {
+  margin-right: 80rpx;
+}

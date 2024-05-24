@@ -1,0 +1,49 @@
+<!--pages/home/index/index.wxml-->
+<view hover-class="none" class="container bg">
+    <view hover-class="none" class="head all-row all-cs">
+      <view>
+        <view>请选择你的身份</view>
+        <text>请先选择你的身份</text>
+      </view>
+      <image src="/images/icon//selectId/default.png"/>
+    </view>
+
+    <block>
+    <navigator url="../login/index?role={{manager}}" hover-class="none">
+      <view hover-class="none" hover-class="none" class="card">
+        <image src="/images/icon/selectId/id1.png"/>
+        <view>
+          <view>管理员</view>
+          <text>点击进入</text>
+        </view>
+        <view hover-class="none" class="arrow">
+          <image src="/images/icon/rightArrow.png"/>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../login/index?role={{classMaster}}" hover-class="none">
+      <view hover-class="none" class="card">
+        <image src="/images/icon/selectId/id2.png"/>
+        <view>
+          <view>班主任</view>
+          <text>点击进入</text>
+        </view>
+        <view hover-class="none" class="arrow">
+          <image src="/images/icon/rightArrow.png"/>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../login/index?role={{teacher}}" hover-class="none">
+      <view hover-class="none" class="card">
+        <image src="/images/icon/selectId/id3.png"/>
+        <view>
+          <view>授课老师</view>
+          <text>点击进入</text>
+        </view>
+        <view hover-class="none" class="arrow">
+          <image src="/images/icon/rightArrow.png"/>
+        </view>
+      </view>
+    </navigator>
+    </block>
+</view>

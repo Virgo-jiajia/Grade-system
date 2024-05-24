@@ -1,0 +1,163 @@
+.operation {
+  padding: 44rpx 0 80rpx 0;
+  background: linear-gradient(#FF5248 0%, #fafafa 25%);
+}
+.operation .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  margin: 0rpx 32rpx 24rpx;
+}
+.operation .top .switch {
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  width: 356rpx;
+  background: #E24D4A;
+  border-radius: 70rpx;
+}
+.operation .top .switch view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rpx 32rpx;
+}
+.operation .top .switch image {
+  width: 25rpx;
+  height: 13rpx;
+}
+.operation .operation-top {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 32rpx 12rpx 32rpx;
+  padding: 37rpx 46rpx 16rpx 37rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+}
+.operation .operation-top image {
+  width: 33rpx;
+  height: 32rpx;
+  margin: 5rpx 17rpx 0 0;
+}
+.operation .operation-top .detail {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #333333;
+}
+.operation .operation-top .detail .tip text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666666;
+  display: block;
+  margin-top: 12rpx;
+}
+.operation .operation-form {
+  margin: 0 32rpx;
+  padding: 22rpx;
+  background: #FFFFFF;
+  border-radius: 12rpx;
+}
+.operation .operation-form .operation-item {
+  border-bottom: 2rpx solid #E6E5E5;
+  font-weight: 800;
+  font-size: 34rpx;
+  color: #333333;
+}
+.operation .operation-form .operation-item .title {
+  margin: 40rpx 0 45rpx 0;
+}
+.operation .operation-form .operation-item .score {
+  display: flex;
+  align-items: center;
+  margin-bottom: 43rpx;
+}
+.operation .operation-form .operation-item .score text {
+  font-size: 28rpx;
+  margin-right: 15rpx;
+}
+.operation .operation-form .operation-item .score view {
+  flex: 1;
+  padding: 18rpx 39rpx;
+  background: #F2F4F7;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+.operation .operation-form .extra-item {
+  padding-left: 10rpx;
+}
+.operation .operation-form .extra-item .extra-title {
+  margin: 34rpx 0 45rpx 0;
+}
+.operation .operation-form .all {
+  text-align: right;
+  margin: 35rpx 0;
+}
+.operation .operation-form .all text {
+  color: #FE5D54;
+}
+.operation .operation-btn {
+  width: 572rpx;
+  padding: 22rpx 0;
+  background: #CC2A2A;
+  border-radius: 70rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  margin: 58rpx auto 0 auto;
+}
+.operation .again {
+  margin: 58rpx 32rpx 0rpx 32rpx;
+  font-weight: 800;
+  font-size: 34rpx;
+  color: #333333;
+  /* 按钮选中 */
+}
+.operation .again button {
+  display: inline-flex;
+  font-size: 32rpx;
+  color: #333333;
+  width: 336rpx;
+  padding: 40rpx 120rpx;
+  margin: 26rpx 0 32rpx 0;
+  background: #E5E5E5;
+  border-radius: 12rpx;
+}
+.operation .again button:last-child {
+  margin-left: 10rpx;
+}
+.operation .again .normal_button {
+  color: #333333;
+  background: #ffffff;
+}
+.operation .again .checked_button {
+  background: #CC2A2A;
+  color: #e5e5e5;
+}
+.operation .comment {
+  margin: 0 32rpx;
+  padding: 26rpx;
+  border-radius: 12rpx;
+  background: #ffffff;
+}
+.operation .comment text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.operation .comment .comment-info {
+  height: 226rpx;
+  font-size: 28rpx;
+  color: #333333;
+  padding: 17rpx 0 0 20rpx;
+  margin-top: 16rpx;
+  background: #F2F4F7;
+  border-radius: 8rpx;
+}
+.operation .phcolor {
+  font-size: 26rpx;
+  color: #999999;
+  font-weight: 500;
+}

@@ -1,0 +1,52 @@
+<view hover-class="none" class="history">
+    <view hover-class="none" class="switch">
+        <picker mode="selector" value="{{index}}" range="{{classes}}" range-key="{{'class_name'}}"
+         bindchange="pickerChangeClass">
+            <view>
+                <text>{{isFirst?classes[index].class_name:'切换班级'}}</text>
+                <image src="/images/icon/down.png" mode="aspectFill"/>
+            </view>
+        </picker>
+        <block wx:if="{{classId}}">
+            <picker mode="selector" range="{{subs}}" value="{{subIndex}}"
+             bindchange="pickerChangeSub" range-key="{{'subject_name'}}">
+                <view>
+                    <text>{{isFirstSub?subs[subIndex].subject_name:'切换科目'}}</text>
+                    <image src="/images/icon/down.png" mode="aspectFill"/>
+                </view>
+            </picker>
+        </block>
+
+    </view>
+    <view hover-class="none" class="title">{{class}}</view>
+    <topCard isCard title="{{className}}" charge="{{masterName}}" teacher="{{teacherName}}"/>
+
+    <linkStyle/>
+        <view hover-class="none" class="history-content">
+            <block wx:if="{{isFirst && isFirstSub}}">
+                <view hover-class="none" class="item top">
+                    <view class="name">姓名</view>
+                    <view class="score">成绩</view>
+                    <view hover-class="none" class="op">操作</view>
+                </view>
+                <block wx:for="{{scores}}" wx:key="id">
+                    <view hover-class="none" class="item">
+                        <view hover-class="none" class="name">{{item.student_name}}</view>
+                        <view class="score">{{item.final_score}}分</view>
+                        <view wx:if="{{isTeacher && item.flow_id == 0}}" hover-class="none" class="change"
+                         bindtap="gotoChange" data-id="{{item.id}}">修改成绩</view>
+                        <!-- <view wx:if="{{!isTeacher}}" hover-class="none">修改成绩</view> -->
+                        <view wx:else hover-class="none" class="op">修改成绩</view>
+                    </view>
+                </block>
+                <view wx:if="{{scores.length==0}}" class="nothing" hover-class="none">
+                    暂无记录
+                </view>
+            </block>
+            <block wx:else>
+                <view class="nothing" hover-class="none">
+                    请选择班级以及科目
+                </view>
+            </block>
+        </view>
+</view>

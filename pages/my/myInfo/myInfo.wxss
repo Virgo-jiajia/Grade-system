@@ -1,0 +1,96 @@
+/* pages/my/myInfo/myInfo.wxss */
+
+.UPBG {
+    flex-wrap: wrap;
+    margin: 30rpx 300rpx;
+}
+
+.UP-item {
+    width: 150rpx;
+    height: 150rpx;
+    
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0 5rpx 10rpx #d1d1d1;
+}
+
+.UP-item:nth-child(3n+0) {
+    margin-right: 0;
+}
+
+.UP-item .UP-item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.UP-item-del {
+    position: absolute;
+    bottom: -10rpx;
+    right: 0rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+
+/* <!-- 1.list --> */
+.whiteBG {
+    background-color: #fff;
+
+    box-sizing: border-box;
+    margin: 20rpx 30rpx;
+    border-radius: 20rpx;
+}
+
+.item {
+    padding: 0 30rpx;
+    line-height: 90rpx;
+}
+
+.item-bar {
+    border-bottom: 1rpx solid #f5f5f5;
+}
+
+.item-l {
+    font-size: 28rpx;
+}
+
+.item-l text {
+    color: #19a0f1;
+}
+
+.item-r {
+    font-size: 28rpx;
+    align-items: center;
+}
+
+.item-r-a {
+    width: 450rpx;
+    font-size: 28rpx;
+    line-height: 60rpx;
+    height: 60rpx;
+    text-align: right;
+}
+
+.arrow {
+    width: 15rpx;
+    height: 25rpx;
+    margin-left: 20rpx;
+}
+
+.alert {
+    text-align: center;
+    margin: 10rpx 30rpx;
+    color: #19a0f1;
+}
+
+.quitBtn {
+    border-radius: 45rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+    margin: 60rpx 30rpx;
+    background-color: #19a0f1;
+    box-shadow: 0 5rpx 10rpx #789eb6a1;
+}

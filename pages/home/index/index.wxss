@@ -1,0 +1,53 @@
+.bg {
+  height: 100vh;
+  padding: 0 91rpx;
+  background: linear-gradient(#FE4C45 0%, #FAFAFA 50%);
+}
+.head {
+  width: 100%;
+  color: white;
+  margin: 65rpx auto 80rpx auto;
+}
+.head image {
+  width: 104rpx;
+  height: 104rpx;
+}
+.head view {
+  color: #FFFFFF;
+}
+.head view view {
+  font-size: 40rpx;
+  padding-bottom: 16rpx;
+}
+.head view text {
+  font-size: 24rpx;
+}
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1rpx solid #E5E5E5;
+  border-radius: 24rpx;
+  padding-right: 55rpx;
+  margin-bottom: 22rpx;
+}
+.card image {
+  width: 188rpx;
+  height: 188rpx;
+}
+.card view view {
+  font-size: 36rpx;
+  padding: 6rpx 0;
+  color: #333333;
+}
+.card view text {
+  font-size: 24rpx;
+  color: #B6BFC8;
+}
+.card .arrow {
+  margin-left: auto;
+}
+.card .arrow image {
+  width: 40rpx;
+  height: 40rpx;
+}

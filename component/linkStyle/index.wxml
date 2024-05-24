@@ -1,0 +1,4 @@
+<view hover-class="none" class="link_style">
+    <image src="/images/icon/link.png" mode="aspectFill" />
+    <image src="/images/icon/link.png" mode="aspectFill" />
+</view>

@@ -1,0 +1,33 @@
+.login .image-logo {
+  width: 471rpx;
+  height: 394rpx;
+  margin-top: 25rpx;
+  padding: 48rpx 140rpx;
+}
+.login .box .input-box {
+  display: flex;
+  margin: 0 89rpx;
+  padding: 22rpx;
+  line-height: 107rpx;
+  margin-bottom: 23rpx;
+  border-radius: 60rpx;
+  font-size: 28rpx;
+  background-color: #e5e5e5;
+}
+.login .box .input-box image {
+  width: 38rpx;
+  height: 38rpx;
+  margin: 0 25rpx;
+}
+.login .box .input-box input {
+  width: 440rpx;
+}
+.login .btn {
+  width: 572rpx;
+  padding: 22rpx 0;
+  color: white;
+  margin-top: 51rpx;
+  font-size: 32rpx;
+  border-radius: 60rpx;
+  background-color: #CC2A2A;
+}

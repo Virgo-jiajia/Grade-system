@@ -1,0 +1,50 @@
+<view hover-class="none" class="mine">
+    <view hover-class="none" class="head">
+        <view hover-class="none" class="head-detail">
+                {{username}}
+            <view hover-class="none" class="head-icon">
+                <block wx:if="{{accessSubject == 'manager'}}">
+                    管理员
+                </block>
+                <block wx:elif="{{accessSubject == 'classMaster'}}">
+                    班主任
+                </block>
+                <block wx:else="{{accessSubject == 'teacher'}}">
+                    授课老师
+                </block>
+            </view>
+        </view>
+        <text>{{phone}}</text>
+    </view>
+
+    <view hover-class="none" class="content">
+        <navigator url="/pages/my/changePass/index" open-type="navigate" hover-class="none">
+            <view hover-class="none" class="item">
+                <image src="/images/icon/my/01.png" mode="aspectFill" />
+                <view>修改密码</view>
+                <image src="/images/icon/my/right.png" mode="aspectFill" />
+            </view>
+        </navigator>
+        <block wx:if="{{accessSubject === 'classMaster' || accessSubject === 'teacher'}}">
+            <!-- <navigator url="/pages/my/historyInfo/index" open-type="navigate" hover-class="none"> -->
+                <view hover-class="none" class="item" bindtap="gotoHistory">
+                    <image src="/images/icon/my/02.png" mode="aspectFill" />
+                    <view>历史录入信息</view>
+                    <image src="/images/icon/my/right.png" mode="aspectFill" />
+                </view>
+            <!-- </navigator> -->
+            <navigator url="/pages/my/applyRecord/index" open-type="navigate" hover-class="none">
+                <view hover-class="none" class="item">
+                    <image src="/images/icon/my/03.png" mode="aspectFill" />
+                    <view>修改成绩申请记录</view>
+                    <image src="/images/icon/my/right.png" mode="aspectFill" />
+                </view>
+            </navigator>
+        </block>
+    </view>
+
+    <!-- <navigator url="/pages/home/index/index" hover-class="none" open-type="navigate"> -->
+        <button class="logout" bindtap="logout">退出登录</button>
+    <!-- </navigator> -->
+      
+</view>

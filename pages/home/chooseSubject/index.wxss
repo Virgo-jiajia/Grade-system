@@ -1,0 +1,59 @@
+.stu-list .list-top {
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 32rpx;
+  padding: 37rpx 46rpx;
+}
+.stu-list .list-top image {
+  width: 33rpx;
+  height: 32rpx;
+  margin: 5rpx 17rpx 0 0;
+}
+.stu-list .list-top .detail {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #333333;
+}
+.stu-list .list-top .detail .tip text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666666;
+  display: block;
+  margin-top: 12rpx;
+}
+.stu-list .subject-box .subject-item {
+  margin: 0 auto;
+  width: 686rpx;
+  height: 188rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  border: 1rpx solid #E5E5E5;
+  margin-bottom: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stu-list .subject-box .subject-item .subject-left {
+  font-weight: bold;
+  font-size: 36rpx;
+  color: #333333;
+  padding: 53rpx 75rpx;
+}
+.stu-list .subject-box .subject-item .subject-left text {
+  font-weight: 500;
+  font-size: 24rpx;
+  color: #B6BFC8;
+}
+.stu-list .subject-box .subject-item image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 47rpx;
+}
+.stu-list .nothing {
+  border-radius: 12rpx;
+  padding: 26rpx 24rpx;
+  color: #666666;
+  font-size: 28rpx;
+  text-align: center;
+}

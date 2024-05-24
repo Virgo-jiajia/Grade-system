@@ -1,0 +1,46 @@
+<view hover-class="none" class="replay-detail" hover-class="none" hover-stop-propagation="false">
+    <view class="top" hover-class="none">
+        <!-- <text wx:if="{{detail.status == 4}}">待审核</text> -->
+        <text>待审核</text>
+        <view class="top-card" hover-class="none">
+            <text>{{detail.subject_name}} {{detail.subjectTagHans}}</text>
+            <view class="top-card-info" hover-class="none">
+                <view>{{detail.class_name}}</view>
+                <text>班主任: {{detail.master_name}}</text>
+                <text>授课老师: {{detail.teacher_name}}</text>
+                <text>学生姓名: {{detail.student_name}}</text>
+            </view>
+        </view>
+    </view>
+    
+    <view class="content" hover-class="none">
+        <view class="title" hover-class="none">申请凭证</view>
+        <view class="detail" hover-class="none">
+            <view hover-class="none" class="upload">
+                上传凭证
+                <view hover-class="none" bindtap="previewImg">
+                    <image src="{{images}}" mode="aspectFill" lazy-load="false" binderror="" bindload="" /> 
+                </view>
+            </view>
+            <view hover-class="none" class="comment">
+                <text>申请描述</text>
+                <view hover-class="none" class="comment-info">
+                    <textarea class="textarea" disabled="{{true}}" value="{{desc}}" maxlength="-1" placeholder="请输入备注信息" placeholder-class="phcolor"></textarea>
+                </view> 
+            </view>
+        </view>
+    </view>
+    
+    <block wx:if="{{ableApply}}">
+        <view class="bottom" hover-class="none">
+            <button class="submit" bindtap="handle" data-type="2">拒绝</button>
+            <button class="submit btn-active" bindtap="handle" data-type="1">通过</button>
+        </view>
+    </block>
+    <block wx:else>
+        <view class="nothing" hover-class="none">
+            该申请需经过教务科科长、分管校长审核
+        </view>
+    </block>
+      
+</view>

@@ -1,0 +1,32 @@
+<view hover-class="none" class="operation">
+    <view hover-class="none" class="operation-top">
+        <view hover-class="none" class="img">
+            <image src="/images/icon/classIcon.png" mode="aspectFill" />
+        </view>
+        <view hover-class="none" class="detail">
+            <text>{{className}}</text>
+            <view hover-class="none" class="tip">
+                <!-- <text wx:if="{{info.charge}}">班主任: {{info.charge}}</text> -->
+                <text wx:if="{{masterName}}">班主任: {{masterName}}</text>
+                <text wx:if="{{stuName}}">学生姓名: {{stuName}}</text>
+            </view>
+        </view>
+    </view>
+    <view hover-class="none" class="operation-form">
+        <linkStyle/>
+        <view hover-class="none" class="operation-item" wx:for="{{courses}}" wx:key="title">
+            <view hover-class="none" class="title">{{item.title}}</view>
+            <view hover-class="none" class="score">
+                <text>成绩</text>
+                <view>    
+                    <input type="number" value="{{item.score}}" 
+                    placeholder="请输入1-100分" bindinput="getIntegral" data-index="{{index}}" />
+                </view>
+            </view>
+        </view>
+        <view hover-class="none" class="all">
+            总评分：<text>{{total}}</text>
+        </view>
+    </view>
+    <button class="operation-btn" bindtap="submitForm">提交</button>
+</view>

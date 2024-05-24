@@ -1,0 +1,7 @@
+/* pages/phoneauthor/rt/rt.wxss */
+page{
+    background-color: #fff;
+}
+.rtBG{
+    margin: 30rpx;
+}

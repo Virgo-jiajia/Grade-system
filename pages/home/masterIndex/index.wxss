@@ -1,0 +1,66 @@
+.history {
+  min-height: 100vh;
+  padding: 0 32rpx 80rpx 32rpx;
+  background: linear-gradient(#FE4C45 0%, #FAFAFA 50%);
+}
+.history .switch {
+  font-size: 26rpx;
+  color: #FFFFFF;
+  padding-top: 23rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.history .switch view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16rpx 0;
+}
+.history .switch image {
+  width: 25rpx;
+  height: 13rpx;
+  margin-left: 8rpx;
+}
+.history .title {
+  width: 150rpx;
+  text-align: center;
+  font-weight: 800;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  margin: -11rpx auto 21rpx auto;
+}
+.history .history-content {
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  padding: 67rpx 0 8rpx 0;
+  margin-top: -18rpx;
+}
+.history .history-content .top {
+  background: #F2F4F7;
+}
+.history .history-content .item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 18rpx 0;
+  font-size: 28rpx;
+  color: #333333;
+  border-bottom: 1rpx solid #E6E5E5;
+}
+.history .history-content .item .name {
+  width: 250rpx;
+}
+.history .history-content .item .score {
+  width: 180rpx;
+}
+.history .history-content .item .op {
+  width: 200rpx;
+}
+.history .history-content .item .change {
+  width: 200rpx;
+  color: #FE5C53;
+}
+.history .history-content .item:last-child {
+  border: none;
+}

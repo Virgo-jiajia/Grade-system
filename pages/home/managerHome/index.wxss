@@ -1,0 +1,30 @@
+.record-list .nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding-top: 38rpx;
+}
+.record-list .nav-bar .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.record-list .nav-bar .nav-item .item {
+  text-align: center;
+}
+.record-list .nav-bar .nav-item .item .line {
+  width: 45rpx;
+  height: 8rpx;
+  background: #ffffff;
+  border-radius: 20rpx;
+}
+.record-list .nav-bar .nav-item .item .default {
+  margin: 12rpx 32rpx 11rpx 32rpx;
+}
+.record-list .nav-bar .nav-item .item .active {
+  background: #CC2A2A;
+}
+.record-list .content_wrapper {
+  margin: 26rpx 32rpx;
+  padding-bottom: 180rpx;
+}

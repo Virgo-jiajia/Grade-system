@@ -1,0 +1,125 @@
+.replay-detail {
+  height: 100vh;
+  padding: 32rpx;
+}
+.replay-detail .top {
+  border-radius: 12rpx;
+  background: #FE5A50;
+  padding-top: 25rpx;
+  border: 0;
+}
+.replay-detail .top text {
+  padding-left: 33rpx;
+  font-weight: bold;
+  font-size: 36rpx;
+  color: #FFFFFF;
+}
+.replay-detail .top .top-card {
+  width: 640rpx;
+  height: 260rpx;
+  border-radius: 12rpx;
+  background: #ffffff;
+  padding: 31rpx 24rpx;
+  margin-top: 19rpx;
+}
+.replay-detail .top .top-card text {
+  padding: 0;
+  font-weight: bold;
+  font-size: 36rpx;
+  color: #333333;
+}
+.replay-detail .top .top-card .top-card-info {
+  margin-top: 17rpx;
+  background: #FAFAFA;
+  border-radius: 14rpx;
+  padding: 14rpx 20rpx;
+}
+.replay-detail .top .top-card .top-card-info view {
+  padding-left: 10rpx;
+  font-weight: 800;
+  font-size: 32rpx;
+  color: #333333;
+}
+.replay-detail .top .top-card .top-card-info text {
+  padding: 8rpx 0 0 15rpx;
+  display: block;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #666666;
+}
+.replay-detail .content {
+  margin-top: 30rpx;
+}
+.replay-detail .content .title {
+  margin: 25rpx 0;
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333333;
+}
+.replay-detail .content .detail {
+  background: #ffffff;
+  border-radius: 12rpx;
+  padding: 31rpx 22rpx;
+}
+.replay-detail .content .detail .upload {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #333333;
+  margin-bottom: 38rpx;
+}
+.replay-detail .content .detail .upload image {
+  width: 172rpx;
+  height: 172rpx;
+  margin-top: 19rpx;
+}
+.replay-detail .content .detail .comment text {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.replay-detail .content .detail .comment .comment-info {
+  font-size: 28rpx;
+  color: #333333;
+  padding: 20rpx;
+  margin-top: 14rpx;
+  background: #EBEBEB;
+  border-radius: 12rpx;
+}
+.replay-detail .content .detail .comment .comment-info .textarea {
+  width: 100%;
+  height: 150rpx;
+  overflow-y: auto;
+}
+.replay-detail .content .detail .comment .phcolor {
+  font-size: 28rpx;
+  color: #999999;
+}
+.replay-detail .bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 120rpx;
+  background: #FFFFFF;
+  margin: 25rpx auto;
+  display: flex;
+  align-items: center;
+}
+.replay-detail .bottom .submit {
+  width: 300rpx;
+  background: #ffffff;
+  border-radius: 80rpx;
+  font-size: 28rpx;
+  color: #FE5A50;
+  border: 1rpx solid #FE564C;
+}
+.replay-detail .bottom .submit:first-child {
+  margin-left: 61rpx;
+}
+.replay-detail .bottom .submit:last-child {
+  margin-right: 61rpx;
+}
+.replay-detail .bottom .btn-active {
+  color: #ffffff;
+  background: #F45349;
+}

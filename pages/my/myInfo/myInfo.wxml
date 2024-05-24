@@ -1,0 +1,66 @@
+<!--pages/my/myInfo/myInfo.wxml-->
+<view hover-class="none" class="container">
+    <view hover-class="none" class="UPBG  all-row">
+        <block wx:for="{{uploadImgs}}" wx:key="uploadImgs">
+            <view hover-class="none" class="UP-item">
+                <image class="UP-item-img" catchtap="tapPreviewImage" data-index="{{index}}" src="{{item}}" mode="aspectFill"></image>
+                <image class="UP-item-del" src="/images/icon/del.png" mode="aspectFit" catchtap="tapUpLoadImgDel" data-index="{{index}}"></image>
+            </view>
+
+
+        </block>
+
+        <view hover-class="none" class="UP-item" wx:if="{{uploadImgs.length < uploadMaxCount}}">
+            <image class="UP-item-img" src="{{addImgStr}}" mode="aspectFill" bindtap="tapUpLoadImg"></image>
+
+        </view>
+    </view>
+
+    <!-- 1.list -->
+    <view hover-class="none" class="whiteBG">
+        <view hover-class="none" class="item item-bar all-row all-cs">
+            <view hover-class="none" class="item-l">昵称</view>
+            <view hover-class="none" class="item-r all-row">
+                <input class="item-r-a" placeholder="请填写昵称(11位以内)" value="{{nickStr}}" bindinput="bindNickStr" placeholder-style="color:#C1C5D1" maxlength="11"></input>
+                <image class="arrow" src="/images/icon/rightArrow.png" mode="aspectFit"></image>
+            </view>
+        </view>
+        <view hover-class="none" class="item item-bar all-row all-cs">
+            <view hover-class="none" class="item-l">姓名<text>*</text> </view>
+            <view hover-class="none" class="item-r all-row">
+                <input class="item-r-a" value="{{nameStr}}" bindinput="bindNameStr" placeholder="请填写姓名" placeholder-style="color:#C1C5D1"></input>
+                <image class="arrow" src="/images/icon/rightArrow.png" mode="aspectFit"></image>
+            </view>
+        </view>
+        <view hover-class="none" class="item item-bar all-row all-cs">
+            <view hover-class="none" class="item-l">职位<text>*</text></view>
+            <view hover-class="none" class="item-r all-row">
+                <input class="item-r-a" value="{{positionStr}}" bindinput="bindPositionStr" placeholder="请填写职位" placeholder-style="color:#C1C5D1"></input>
+                <image class="arrow" src="/images/icon/rightArrow.png" mode="aspectFit"></image>
+            </view>
+        </view>
+
+        <view hover-class="none" class="item item-bar all-row all-cs">
+            <view hover-class="none" class="item-l">公司<text>*</text></view>
+            <view hover-class="none" class="item-r all-row">
+                <input class="item-r-a" value="{{companyStr}}" bindinput="bindCompanyStr" placeholder="请填写公司" placeholder-style="color:#C1C5D1"></input>
+                <image class="arrow" src="/images/icon/rightArrow.png" mode="aspectFit"></image>
+            </view>
+        </view>
+        <view hover-class="none" class="item item-bar all-row all-cs">
+            <view hover-class="none" class="item-l">关注类型<text>*</text></view>
+            <view hover-class="none" class="item-r all-row" bindtap="tapCate">
+                <input class="item-r-a" wx:if="{{cateStr.length == 0}}" disabled value="{{cateStr}}" placeholder="请选择关注类型" placeholder-style="color:#C1C5D1"></input>
+                <view hover-class="none" class="item-r-a" style="height: auto;" wx:else>{{cateStr}}</view>
+
+                <image class="arrow" src="/images/icon/rightArrow.png" mode="aspectFit"></image>
+            </view>
+        </view>
+
+    </view>
+ 
+    <view hover-class="none" class="whiteBG item quitBtn" bindtap="tapSave">保存</view>
+
+
+
+</view>

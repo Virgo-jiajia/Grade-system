@@ -1,0 +1,20 @@
+<view hover-class="none" class="stu-list">
+    <topCard title="{{className}}" charge="{{masterName}}"/>
+
+    <block wx:if="{{students.length}}">
+        <view hover-class="none" class="list-box" wx:for="{{students}}" wx:key="id">
+            <view hover-class="none" class="list-item">
+                <image src="/images/icon/student.png" mode="aspectFill" />
+                <text>{{item.student_name}}</text>
+                <!-- 传参数判断校内、校外、操行分 待验证 -->
+                <block wx:if="{{accessSubject == 'teacher' || accessSubject == 'classMaster'}}">
+                    <button bindtap="chooseType" data-id="{{item.id}}" data-name="{{item.student_name}}">填写成绩</button>
+                </block>
+            </view>
+        </view>
+    </block>
+    
+    <block wx:else>
+        <view class="nothing" hover-class="none">暂无数据</view>
+    </block>
+</view> 

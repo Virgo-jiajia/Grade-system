@@ -1,0 +1,36 @@
+
+    <view hover-class="none" class="record_card">
+        <view hover-class="none" class="title">
+            <view hover-class="none" class="title-one">{{subject}}</view>
+            <view>{{type}}</view>
+            <view hover-class="none" class="icon">
+                <image src="/images/icon/my/check-{{status}}.png" mode="aspectFill" lazy-load="false" />
+            </view>
+        </view>
+        <view hover-class="none" class="content">
+            <view hover-class="none" class="content-title">{{class}}</view>
+            <view v-if="master">班主任: {{master}}</view>
+            <view>授课老师: {{teacher}}</view>
+            <view>学生姓名: {{student}}</view> 
+        </view>
+        <view>
+            <block wx:if="{{status == 4}}">
+                <view hover-class="none" class="bottom">
+                    <text>申请到 : </text><text class="bottom-text">{{replayTo}}</text>
+                </view>      
+            </block>
+            <block wx:if="{{status == 1}}">
+                <view hover-class="none" class="bottom-btn">
+                    <button class="btn btn-active btn-detail" data-id="{{flowId}}" bindtap="updateScore">修改成绩</button>
+                </view>      
+            </block>
+            <block wx:if="{{status == 2}}">
+                <view hover-class="none" class="bottom-btn">
+                    <button class="btn" data-id="{{flowId}}" bindtap="handleCancel">取消修改</button>
+                    <button class="btn btn-active" data-flow_id="{{flowId}}" bindtap="updateEvidence">重新上传凭证</button>
+                </view>      
+            </block>
+        </view>
+    </view>
+
+  

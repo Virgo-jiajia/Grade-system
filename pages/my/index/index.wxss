@@ -1,0 +1,68 @@
+.mine {
+  height: 100vh;
+  background: #ffffff;
+}
+.mine .head {
+  width: 750rpx;
+  background: #FE4C45;
+  color: #ffffff;
+  padding: 98rpx 67rpx;
+}
+.mine .head .head-detail {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.mine .head .head-detail .head-icon {
+  width: 96rpx;
+  padding: 5rpx 14rpx;
+  background: #CC2A2A;
+  border-radius: 70rpx 70rpx 70rpx 2rpx;
+  opacity: 0.8;
+  font-size: 22rpx;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10rpx;
+}
+.mine .head text {
+  margin-top: 4rpx;
+  font-weight: 500;
+  font-size: 24rpx;
+}
+.mine .content {
+  width: 100vw;
+  height: 658rpx;
+  border-radius: 30rpx 30rpx 0 0;
+  background: #ffffff;
+  padding: 30rpx 0 32rpx 0;
+  margin-top: -30rpx;
+}
+.mine .content .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 33rpx;
+}
+.mine .content .item image {
+  width: 54rpx;
+  height: 54rpx;
+}
+.mine .content .item view {
+  flex: 1;
+}
+.mine .content .item image:last-child {
+  width: 13rpx;
+  height: 21rpx;
+  margin-right: 33rpx;
+}
+.mine .logout {
+  width: 572rpx;
+  padding: 24rpx 0;
+  background: #F6F5F7;
+  border-radius: 80rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #919199;
+}

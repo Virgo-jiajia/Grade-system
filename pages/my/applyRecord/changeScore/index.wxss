@@ -1,0 +1,62 @@
+.change-score {
+  height: 100vh;
+  padding: 32rpx;
+  background: #ffffff;
+}
+.change-score .upload {
+  font-weight: bold;
+  font-size: 32rpx;
+  color: #333333;
+  margin: 12rpx 0 53rpx 0;
+}
+.change-score .upload image {
+  width: 172rpx;
+  height: 172rpx;
+  margin: 19rpx 20rpx 0 0;
+}
+.change-score .upload .images-box {
+  display: inline-block;
+  position: relative;
+}
+.change-score .upload .images-box image {
+  width: 172rpx;
+  height: 172rpx;
+  margin: 19rpx 20rpx 0 0;
+}
+.change-score .upload .images-box .delete-img {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 15rpx;
+  right: 15rpx;
+  color: #EBEBEB;
+}
+.change-score .comment text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.change-score .comment .comment-info {
+  font-size: 28rpx;
+  color: #333333;
+  padding: 20rpx;
+  margin-top: 16rpx;
+  background: #EBEBEB;
+  border-radius: 12rpx;
+}
+.change-score .comment .comment-info .textarea {
+  width: 100%;
+}
+.change-score .comment .phcolor {
+  font-size: 28rpx;
+  color: #999999;
+}
+.change-score .submit {
+  width: 572rpx;
+  padding: 24rpx 0;
+  background: #CC2A2A;
+  border-radius: 70rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  margin: 42rpx auto 0 auto;
+}

@@ -1,0 +1,88 @@
+.record_card {
+  background: #ffffff;
+  border-radius: 12rpx;
+  padding: 26rpx 0 31rpx 0;
+  margin-bottom: 26rpx;
+  color: #333333;
+  overflow: hidden;
+}
+.record_card .title {
+  display: flex;
+  position: relative;
+  font-weight: bold;
+  font-size: 36rpx;
+  padding: 0 23rpx;
+}
+.record_card .title .title-one {
+  margin-right: 28rpx;
+}
+.record_card .title .icon {
+  position: absolute;
+  top: -15rpx;
+  right: 0;
+}
+.record_card .title .icon image {
+  width: 128rpx;
+  height: 68rpx;
+}
+.record_card .content {
+  background: #FAFAFA;
+  border-radius: 12rpx;
+  padding: 14rpx 20rpx;
+  margin: 14rpx 30rpx 0 20rpx;
+}
+.record_card .content .content-title {
+  font-weight: bold;
+  font-weight: 800;
+  font-size: 32rpx;
+  color: #333333;
+  margin: 0;
+}
+.record_card .content view {
+  margin-top: 9rpx;
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #666666;
+}
+.record_card .bottom {
+  color: #666666;
+  margin: 28rpx 28rpx 0 28rpx;
+  font-size: 26rpx;
+}
+.record_card .bottom .bottom-text {
+  color: #333333;
+  font-weight: bold;
+}
+.record_card .bottom-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.record_card .bottom-btn .btn {
+  width: 148rpx;
+  padding: 14rpx;
+  border-radius: 80rpx;
+  border: 1rpx solid #666666;
+  color: #666666;
+  font-size: 28rpx;
+  font-weight: 500;
+  margin: 11rpx 28rpx 0 0 ;
+  margin-right: 28rpx;
+  background: #ffffff;
+}
+.record_card .bottom-btn .btn-active {
+  font-weight: 500;
+  font-size: 28rpx;
+  color: #FE564C;
+  border: 1rpx solid #FE564C;
+}
+.record_card .bottom-btn .btn-detail {
+  width: 200rpx;
+}
+.nothing {
+  background: #ffffff;
+  border-radius: 12rpx;
+  padding: 26rpx 24rpx;
+  color: #666666;
+  font-size: 28rpx;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+<!--pages/author/index/index.wxml-->
+<view hover-class="none" class='con'>
+	<!-- <image src='../../img/logo.jpg'></image> -->
+	<text class='con_a'>完善用户信息页面</text>
+	<text class='con_b'>此页面是完善用户信息页面，获取用微信平台有关的头像、昵称、手机号等基本信息</text>
+
+	<button class="topBG-name2" hover-class="AM-c-author01"  bindtap="tapAuthor">
+		用户信息授权 </button>
+	
+</view>

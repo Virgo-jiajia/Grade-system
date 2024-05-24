@@ -1,0 +1,26 @@
+<view hover-class="none" class="choose">
+    <view hover-class="none" class="search">
+        <image src="/images/icon/search.png" mode="aspectFill" />
+        <input type="text" value="{{keyword}}" placeholder="搜索班级名称" placeholder-class="searchPlace"
+        bindinput="handleSearch"/>
+    </view>
+
+    <block wx:if="{{classes.length}}">
+        <block wx:for="{{classes}}" wx:key="id">
+            <!-- 传递参数 class_name teacher_name -->
+                <view hover-class="none" class="class-style" bindtap="handleJump" 
+                data-id="{{item.id}}" data-class_name="{{item.class_name}}" data-teacher_name="{{item.teacher_name}}" hover-class="none" hover-stop-propagation="false">
+                    <image class="left-icon" src="/images/icon/classIcon.png" mode="aspectFill" />
+                    <view hover-class="none" class="" selectable="false" space="false" decode="false">
+                        {{item.class_name}}
+                    </view>
+                    <image class="right-icon" src="/images/icon/rightArrow.png" mode="aspectFill" />
+                </view>
+        </block>
+    </block>
+    <block wx:else>
+        <view class="no-data" hover-class="none">
+            暂无数据
+        </view>
+    </block>
+</view>

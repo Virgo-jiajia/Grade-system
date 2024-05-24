@@ -1,0 +1,53 @@
+<!-- 页面顺序 home login class studentList chooseSubject operation -->
+<view hover-class="none" class="stu-list">
+    <topCard title="{{className}}" charge="{{masterName}}" student="{{stuName}}"/>
+    <!-- 选择校内成绩 校外成绩 操行分 -->
+     <block wx:if="{{scoreTypes.inSideOfSchoolScoreType && isTeacher}}"> 
+             <view hover-class="none" class="subject-box" bindtap="gotoOnCampus">
+                 <view hover-class="none" class="subject-item">
+                     <view hover-class="none" class="subject-left">
+                         <view hover-class="none" class="title">
+                             校内成绩
+                         </view>
+                         <text>点击进入录入成绩</text>
+                     </view>
+                     <image src="/images/icon/rightArrow.png" mode="aspectFill" />     
+                 </view>
+             </view>
+     </block>
+     <block wx:if="{{scoreTypes.conductScoreType}}"> 
+         <navigator url="/pages/home/scoreForm/operation/index" hover-class="none" open-type="navigate">
+             <view hover-class="none" class="subject-box">
+                 <view hover-class="none" class="subject-item">
+                     <view hover-class="none" class="subject-left">
+                         <view hover-class="none" class="title">
+                             操行分
+                         </view>
+                         <text>点击进入录入成绩</text>
+                     </view>
+                     <image src="/images/icon/rightArrow.png" mode="aspectFill" />     
+                 </view>
+             </view>
+         </navigator>
+     </block>
+     <block wx:if="{{ scoreTypes.outSideOfSchoolScoreType  && isTeacher}}">
+         <navigator url="/pages/home/scoreForm/offCampus/index" hover-class="none" open-type="navigate">
+             <view hover-class="none" class="subject-box">
+                 <view hover-class="none" class="subject-item">
+                     <view hover-class="none" class="subject-left">
+                         <view hover-class="none" class="title">
+                             校外成绩
+                         </view>
+                         <text>点击进入录入成绩</text>
+                     </view>
+                     <image src="/images/icon/rightArrow.png" mode="aspectFill" />     
+                 </view>
+             </view>
+         </navigator>
+     </block>
+     <block wx:if="{{!scoreTypes.inSideOfSchoolScoreType && !scoreTypes.conductScoreType && !scoreTypes.outSideOfSchoolScoreType}}">
+         <view hover-class="none" class="nothing">
+            暂无科目可选
+        </view>
+     </block>
+</view> 
